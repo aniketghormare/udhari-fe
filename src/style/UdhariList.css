@@ -1,0 +1,173 @@
+/* General Styles */
+/* .udhari-container {
+  width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+ 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.udhari-container {
+  width: 100%;
+  max-width: 1000px; /* Ensures the container doesn't stretch */
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.open-modal-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.open-modal-btn:hover {
+  background: #0056b3;
+}
+
+/* Table Styling */
+.udhari-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: scroll;
+  overflow-x: scroll;
+
+}
+
+/* Table Scrollable on Small Screens */
+.udhari-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.udhari-table th, .udhari-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.udhari-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.udhari-table tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* Buttons for Actions */
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: white;
+  width: 60px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  width: 60x;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal-btn {
+  background: #6c757d;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .udhari-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .open-modal-btn {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  /* .udhari-table th, .udhari-table td {
+    padding: 8px;
+  } */
+  .udhari-table th, .udhari-table td {
+    /* min-width: 10px; */
+  }
+
+  .modal-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .submit-btn, .close-modal-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
